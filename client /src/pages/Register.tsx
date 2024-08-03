@@ -23,6 +23,7 @@ const Register: React.FC = () => {
       setError("Invalid email format");
       return;
     }
+
     try {
       await api.post("/api/auth/register", { name, email, password });
       alert("Registration successful");
