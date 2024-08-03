@@ -10,13 +10,7 @@ const app = express();
 dotenv.config();
 
 // Middleware
-app.use(
-  cors({
-    origin: [""],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/auth", authRoutes);
 app.use("/api", userRoutes);
