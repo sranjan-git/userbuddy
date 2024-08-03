@@ -46,9 +46,6 @@ export const login = async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Invalid credentials' });
     }
 
-    // Generate a JWT token
-    // const token = jwt.sign({ id: user._id }, 'your_jwt_secret', { expiresIn: '1h' });
-
 // Assuming 'user' is the authenticated user object
 const token = jwt.sign(
   { userId: user._id, email: user.email }, // Payload
@@ -61,36 +58,3 @@ const token = jwt.sign(
     res.status(500).json({ error: 'Server error' });
   }
 };
-
-
-// import { Request, Response } from 'express';
-// import * as bcrypt from 'bcryptjs';
-// import * as jwt from 'jsonwebtoken';
-// import User from '../models/User';
-
-// export const register = async (req: Request, res: Response) => {
-//   try {
-//     const { name, email, password } = req.body;
-//     const hashedPassword = await bcrypt.hash(password, 10);
-//     const user = new User({ name, email, password: hashedPassword });
-//     await user.save();
-//     res.status(201).json({ message: 'User registered successfully' });
-//   } catch (error) {
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// };
-
-// export const login = async (req: Request, res: Response) => {
-//   try {
-//     const { email, password } = req.body;
-//     const user = await User.findOne({ email });
-//     if (!user || !(await bcrypt.compare(password, user.password))) {
-//       return res.status(400).json({ error: 'Invalid credentials' });
-//     }
-//     const token = jwt.sign({ id: user._id }, 'your_jwt_secret', { expiresIn: '1h' });
-//     res.json({ token });
-//   } catch (error) {
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// };
-
