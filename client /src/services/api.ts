@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://userbuddyy.onrender.com',
+  baseURL: 'https://userbuddy.vercel.app',
 });
 
 export default api;
