@@ -263,6 +263,6 @@ All protected routes require the JWT token to be passed in the `Authorization` h
 
 ### **Error Handling**
 
-All responses include an `error` field in the case of failures, with a brief description of the issue encountered. Ensure that your application is handling these errors gracefully.
+All responses include an `error` field in the case of failures, with a brief description of the issue encountered. 
 
 ---
