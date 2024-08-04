@@ -1,22 +1,22 @@
-### API Documentation**
+### API Documentation
 
 This API provides endpoints for user registration, login, and profile management. Below are the details of each endpoint, including the request and response formats.
 
 ---
 
-### **Base URL**
-- **Development:** `http://localhost:5000`
+### Base URL
+- **Development:** `http://localhost:5001`
 - **Production:** `https://userbudbackend.onrender.com`
 
 ---
 
-### **1. Register User**
+### 1. Register User**
 
 **Endpoint:** `POST /api/auth/register`
 
-**Description:** Registers a new user.
+Description: Registers a new user.
 
-**Request:**
+Request:
 ```json
 {
   "name": "John Doe",
