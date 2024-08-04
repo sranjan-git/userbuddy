@@ -1,5 +1,8 @@
 # Demo
 
+https://github.com/user-attachments/assets/f76fcd29-a608-46d0-a9d9-25881658accc
+
+
 # UserBuddy - User Management System
 
 UserBuddy is a simple and responsive user management system built with React, TypeScript, Node.js, and Express. It allows users to register, login, view, and edit profiles, and browse a directory of registered users.
