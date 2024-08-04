@@ -48,7 +48,7 @@ UserBuddy is a simple and responsive user management system built with React, Ty
 
 4. Start the backend server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ### Frontend Setup
