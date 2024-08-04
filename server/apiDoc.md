@@ -10,7 +10,7 @@ This API provides endpoints for user registration, login, and profile management
 
 ---
 
-### 1. Register User**
+### 1. Register User
 
 **Endpoint:** `POST /api/auth/register`
 
